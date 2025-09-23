@@ -32,9 +32,9 @@
    <img width="1150" height="388" alt="image" src="https://github.com/user-attachments/assets/0b3f059d-dc4e-462f-8542-ec52949eda3a" />
 
 
-6. Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложений из п.1.
+5. Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложений из п.1.
 
-Создан отдельный Pod multitool.
+Создан отдельный Pod [multitool2](https://github.com/vladmgb/kuber-1.3/blob/main/multitool-pod.yaml).
 
    <img width="588" height="125" alt="image" src="https://github.com/user-attachments/assets/243e1ce9-503c-4f8e-af60-451f24684215" />
 
@@ -45,7 +45,31 @@
 
 ## Задание 2. Создать Deployment и обеспечить старт основного контейнера при выполнении условий
 1. Создать Deployment приложения nginx и обеспечить старт контейнера только после того, как будет запущен сервис этого приложения.
+
+Создан Deployment. 
+[Ссылка на манифест deployment2](https://github.com/vladmgb/kuber-1.3/blob/main/deployment2.yaml)
+   
 2. Убедиться, что nginx не стартует. В качестве Init-контейнера взять busybox.
+
+<img width="497" height="118" alt="image" src="https://github.com/user-attachments/assets/e62da66e-7cd3-4858-9a63-290a6a6d3586" />
+
+nginx не стартует
+
+<img width="573" height="103" alt="image" src="https://github.com/user-attachments/assets/3afbe100-47e8-43fc-af84-5cb63e56b274" />
+
+   
 3. Создать и запустить Service. Убедиться, что Init запустился.
+
+   Создал Service и запустил.
+   [Манифест Service](https://github.com/vladmgb/kuber-1.3/blob/main/service3.yaml).
+
+<img width="642" height="125" alt="image" src="https://github.com/user-attachments/assets/3558158b-361f-4819-9de0-e74cc7546dfa" />
+
+Init запустился
+
+<img width="603" height="113" alt="image" src="https://github.com/user-attachments/assets/d8f628e7-82c2-442a-8a16-33e5ba568d4c" />
+
+   
 4. Продемонстрировать состояние пода до и после запуска сервиса.
 
+Скрины были выше по тексту.
